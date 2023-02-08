@@ -1,0 +1,67 @@
+/* Holds background image in place*/
+.wood {
+    position: sticky;
+    top: 0px;
+    width: 33%;
+    height: 100vh;
+}
+
+/*Brings content over background image*/
+main {position: relative;}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .75rem;
+    background-color: white;
+}
+
+.line {
+    border-bottom: solid black 2px;
+    width: 70vw;
+}
+
+.header {
+    font-family: 'Arial narrow', sans-serif;
+    font-size: larger;
+    text-transform: uppercase; 
+}
+
+.title {
+    font-family: 'Arial narrow', sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+/* Sets each section to the view height of the screen*/
+.full {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.selfie {
+    border-radius: 50%;
+    width: 15rem;
+    margin-left: 25%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+
+}
+
+.links {
+    margin-top: 2rem;
+
+}
