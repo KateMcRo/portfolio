@@ -1,19 +1,21 @@
 /* Holds background image in place*/
 .wood {
-    position: sticky;
+    position: fixed;
     top: 0px;
     width: 33%;
     height: 100vh;
 }
 
 /*Brings content over background image*/
-main {position: relative;}
+main {
+    position: relative; top: 0; 
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: .75rem;
+    margin: 2rem;
     background-color: white;
 }
 
@@ -30,7 +32,8 @@ header {
 
 .title {
     font-family: 'Arial narrow', sans-serif;
-    font-size: large;
+    font-size: 40px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -42,26 +45,100 @@ header {
 
 }
 
+.margin-left {
+    margin-left: 33vw;
+    position: relative;
+}
+
 .intro {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    height: 100vh;
 }
 
 .selfie {
     border-radius: 50%;
     width: 15rem;
-    margin-left: 25%;
+    margin-left: -15%;
 }
 
 .about {
     display: flex;
     flex-direction: column;
     margin-left: 4rem;
+}
 
+.info {
+    color: #4B4846;
 }
 
 .links {
     margin-top: 2rem;
 
+}
+
+.projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.alt-container {
+    width: 67%;
+}
+
+
+
+.pro {
+    margin-left: -38%;
+    color: white;
+    padding-top: 2rem;
+}
+
+.major {
+    width: 35vw;
+}
+
+.minor {
+    width: 30%;
+    border: solid #E7E6E2 1px;
+}
+
+.secondary-title {
+    font-size: larger;
+    font-family: 'Monaco' Courier, monospace;
+    margin-bottom: .5rem;
+}
+
+.projectA {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.containerB {
+    display: flex;
+}
+
+.projectB {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 1rem;
+}
+
+.description {
+    width: 40%;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
 }
