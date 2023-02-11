@@ -6,42 +6,40 @@
     height: 100vh;
 }
 
-/*Brings content over background image*/
-main {
-    position: relative; top: 0; 
-}
-
+/* Creates top name/title bar*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2rem;
-    background-color: white;
 }
 
 .line {
-    border-bottom: solid black 2px;
+    border-bottom: solid var(--dark) 2px;
     width: 70vw;
 }
 
 .header {
-    font-family: 'Arial narrow', sans-serif;
+    font-family: var(--font1);
     font-size: larger;
     text-transform: uppercase; 
 }
 
+/* Styling for section titles*/
 .title {
-    font-family: 'Arial narrow', sans-serif;
+    font-family: var(--font1);
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
+/* Standardizes the size of each section*/
 section {
     display: flex;
     height: 100vh;
 }
 
+/* Places content to right of wood image by default*/
 .margin-left {
     margin-left: 33vw;
     position: relative;
@@ -64,12 +62,15 @@ section {
 }
 
 .info {
-    color: #4B4846;
+    margin-top: .5rem;
+    color: var(--mid);
+    font-family: var(--font1);
 }
 
 .links {
+    display: flex;
+    justify-content: space-evenly;
     margin-top: 2rem;
-
 }
 
 .projects {
@@ -89,7 +90,7 @@ section {
 
 .pro {
     margin-left: -38%;
-    color: white;
+    color: var(--light);
     padding-top: 2rem;
 }
 
@@ -99,7 +100,7 @@ section {
 
 .minor {
     width: 30%;
-    border: solid #E7E6E2 1px;
+    border: solid var(--soft) 1px;
 }
 
 .img {
@@ -112,7 +113,7 @@ section {
 
 .secondary-title {
     font-size: larger;
-    font-family: 'Monaco' Courier, monospace;
+    font-family: var(--font2);
     margin-bottom: .5rem;
 }
 
@@ -139,7 +140,12 @@ section {
 }
 
 a {
+    color: var(--dark);
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
 }
 
 .contact {
