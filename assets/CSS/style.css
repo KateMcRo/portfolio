@@ -1,13 +1,90 @@
-.mobile {
-    display: none;
-}
+/*** Composition ***/
 
 body {
     margin: 0;
 }
 
+/* Places content to right of wood image by default*/
+.margin-left {
+    margin-left: 33vw;
+    position: relative;
+}
+
+/*** Utilities ***/
+.header-title {
+    font-family: var(--font1);
+    font-size: larger;
+    text-transform: uppercase; 
+}
+
+/* Styling for section titles*/
+.title-text {
+    font-family: var(--font1);
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.page-text {
+    margin-top: .5rem;
+    color: var(--mid);
+    font-family: var(--font1);
+}
+
+.pro {
+    margin-left: -36%;
+    color: var(--light);
+    padding-top: 2rem;
+}
+
+.secondary-title {
+    font-size: larger;
+    font-family: var(--font2);
+    margin-bottom: .5rem;
+}
+
+.web-link {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.grayscale {
+    filter: grayscale(1);
+}
+
+.header-line {
+    border-bottom: solid var(--dark) 2px;
+    width: 70vw;
+}
+
+.lg-scale {
+    width: 15rem;
+}
+
+.sm-scale {
+    width: 10rem;
+    height: 13rem;
+    border: solid var(--soft) 1px;
+}
+
+/*** Blocks ***/
+
+/* Standardizes the size of each section */
+.web-view-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.web-intro-container {
+    align-items: center;
+    margin-top: -10vh;
+    display: flex;
+    height: 100vh;
+}
+
 /* Holds background image in place*/
-.wood {
+.side-img {
     position: fixed;
     top: 0px;
     width: 33%;
@@ -22,41 +99,6 @@ header {
     margin: 2rem;
 }
 
-.line {
-    border-bottom: solid var(--dark) 2px;
-    width: 70vw;
-}
-
-.header {
-    font-family: var(--font1);
-    font-size: larger;
-    text-transform: uppercase; 
-}
-
-/* Styling for section titles*/
-.title {
-    font-family: var(--font1);
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Standardizes the size of each section*/
-section {
-    display: flex;
-    height: 100vh;
-}
-
-/* Places content to right of wood image by default*/
-.margin-left {
-    margin-left: 33vw;
-    position: relative;
-}
-
-.intro {
-    align-items: center;
-}
-
 .selfie {
     border-radius: 50%;
     width: 15rem;
@@ -64,107 +106,39 @@ section {
     margin-left: -15%;
 }
 
-.about {
+.about-column {
     display: flex;
     flex-direction: column;
     margin-left: 4rem;
 }
 
-.info {
-    margin-top: .5rem;
-    color: var(--mid);
-    font-family: var(--font1);
-}
-
-.links {
+.web-nav-links {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
 }
 
-.projects {
-    flex-direction: column;
-}
-
-.main-container {
-    position: relative;
+.flex-container {
     display: flex;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-.alt-container {
-    width: 67%;
-}
-
-.pro {
-    margin-left: -36%;
-    color: var(--light);
-    padding-top: 2rem;
-}
-
-.major {
-    width: 35vw;
-}
-
-.minor {
-    width: 30%;
-    border: solid var(--soft) 1px;
-}
-
-.img {
-    filter: grayscale(1);
-}
-
-.img:hover {
-    filter: grayscale(0);
-}
-
-.secondary-title {
-    font-size: larger;
-    font-family: var(--font2);
-    margin-bottom: .5rem;
 }
 
 .projectA {
     display: flex;
     margin-bottom: 2rem;
-    justify-content: center;
-}
-
-.containerB {
-    display: flex;
+    justify-content: left;
+    margin-left: 2rem;
 }
 
 .projectB {
     display: flex;
-    flex-direction: row;
     justify-content: left;
-    padding-left: 1rem;
+    padding-left: 2rem;
+    align-items: center;
 }
 
-.description {
+.text-container {
     width: 40%;
     padding: 1rem;
-}
-
-.w-link {
-    color: var(--dark);
-    text-decoration: none;
-}
-
-.w-link:hover {
-    color: var(--accent);
-}
-
-.contact {
-    flex-direction: column;
-}
-
-.contact-me {
-    text-align: end;
-    padding-top: 2rem;
-    width: 90%;
 }
 
 .contact-box {
@@ -172,56 +146,43 @@ section {
     flex-direction: column;
     display: flex;
     align-items: end;
-    justify-content: space-around;
+    text-align: end;
     margin-right: 2rem;
+    justify-content: space-evenly;
 }
 
-/* Mobile CSS */
+/*** Exceptions ***/
+
+/* Hides mobile view */
+.mobile {
+    display: none;
+}
+
+.grayscale:hover {
+    filter: grayscale(0);
+}
+
+.web-link:hover {
+    color: var(--accent);
+}
+
+/*** Mobile CSS ***/
 @media screen and (max-width: 768px) {
+    /*** Composition ***/
     .mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .web {
-        display: none;
-    }
-
-    .m-wood {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 10vh;
-        width: 100%;
-        background-image: url("../images/wood.png");
-        background-position: -10px;
-    }
-
-    .m-nav {
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-        z-index: 10;
-        color: var(--light);
-    }
-
-    .m-link {
+    /*** Utilities ***/
+    .m-nav-link {
         color: var(--light);
         text-decoration: none;
     }
 
-    .m-link:hover {
-        color: var(--dark);
-    }
-
-    .m-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        border: 2px solid red;
+    b {
+        color: var(--accent);
     }
 
     .m-selfie {
@@ -235,16 +196,46 @@ section {
         margin-top: -10vh;
     }
 
-    b {
-        color: var(--accent);
-    }
-
-    .m-major {
+    .m-lg-scale {
         width: 50vw;
     }
 
+    .m-sm-scale {
+        width: 25%;
+        border: solid var(--soft) 1px;
+    }
+
+    .m-link {
+        color: var(--dark);
+        text-decoration: none;
+    }
+
+    /*** Block ***/
+    .m-header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        width: 100%;
+        background-image: url("../images/wood.png");
+        background-position: -10px;
+    }
+
+    .m-nav-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        z-index: 10;
+        color: var(--light);
+    }
+
     .m-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 80vw;
+        text-align: center;
+        height: 100vh;
     }
 
     .m-containerB {
@@ -253,15 +244,27 @@ section {
         justify-content: space-between;
     }
 
-    .m-minor {
-     
-        width: 25%;
-        border: solid var(--soft) 1px;
+    .m-contact-box {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 75%;
+        align-items: end;
+        text-align: end;
     }
 
-    .m-contact-box {
-        border: 2px solid blue;
-        width: 90%;
+    /*** Exceptions ***/    
+    .web {
+        display: none;
+    }
+
+    .m-nav-link:hover {
+        color: var(--dark);
+    }
+
+    .m-link:hover {
+        color: var(--accent);
     }
 
 }
