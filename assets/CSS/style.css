@@ -1,3 +1,11 @@
+.mobile {
+    display: none;
+}
+
+body {
+    margin: 0;
+}
+
 /* Holds background image in place*/
 .wood {
     position: fixed;
@@ -52,6 +60,7 @@ section {
 .selfie {
     border-radius: 50%;
     width: 15rem;
+    height: 15rem;
     margin-left: -15%;
 }
 
@@ -89,7 +98,7 @@ section {
 }
 
 .pro {
-    margin-left: -38%;
+    margin-left: -36%;
     color: var(--light);
     padding-top: 2rem;
 }
@@ -139,12 +148,12 @@ section {
     padding: 1rem;
 }
 
-a {
+.w-link {
     color: var(--dark);
     text-decoration: none;
 }
 
-a:hover {
+.w-link:hover {
     color: var(--accent);
 }
 
@@ -165,4 +174,94 @@ a:hover {
     align-items: end;
     justify-content: space-around;
     margin-right: 2rem;
+}
+
+/* Mobile CSS */
+@media screen and (max-width: 768px) {
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .m-wood {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        width: 100%;
+        background-image: url("../images/wood.png");
+        background-position: -10px;
+    }
+
+    .m-nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        z-index: 10;
+        color: var(--light);
+    }
+
+    .m-link {
+        color: var(--light);
+        text-decoration: none;
+    }
+
+    .m-link:hover {
+        color: var(--dark);
+    }
+
+    .m-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        border: 2px solid red;
+    }
+
+    .m-selfie {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+
+    .m-center {
+        justify-content: center;
+        margin-top: -10vh;
+    }
+
+    b {
+        color: var(--accent);
+    }
+
+    .m-major {
+        width: 50vw;
+    }
+
+    .m-container {
+        width: 80vw;
+    }
+
+    .m-containerB {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .m-minor {
+     
+        width: 25%;
+        border: solid var(--soft) 1px;
+    }
+
+    .m-contact-box {
+        border: 2px solid blue;
+        width: 90%;
+    }
+
 }
