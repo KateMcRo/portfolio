@@ -11,16 +11,16 @@ Potential employers will want to see examples of my coding work.
 ## Preview
 
 
-    ![web view of portfolio](assets/images/web.png)
+![web view of portfolio](assets/images/web.png)
     
 
 
-    ![mobile view of portfolio](assets/images/mobile.png)
+![mobile view of portfolio](assets/images/mobile.png)
     
 
 ## Deployment
 
-https://katemcro.github.io/portfolio/
+[Kate Rogers | Portfolio](https://katemcro.github.io/portfolio/)
 
 ## License
 
