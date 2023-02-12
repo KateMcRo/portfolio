@@ -10,13 +10,13 @@ Potential employers will want to see examples of my coding work.
 
 ## Preview
 
-```md
-    ![web view of portfolio](assets/images/web.png)
-    ```
 
-    ```md
+    ![web view of portfolio](assets/images/web.png)
+    
+
+
     ![mobile view of portfolio](assets/images/mobile.png)
-    ```
+    
 
 ## Deployment
 
